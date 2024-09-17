@@ -1,102 +1,98 @@
 # Stockify
 
-Stockify is a virtual trading platform designed to provide users with an interactive experience in simulated stock trading. With a range of features and risk management tools, Stockify allows users to practice trading in a realistic environment without the risk of losing real money.
+Stockify is an advanced virtual trading platform that provides a realistic and interactive environment for simulated stock trading. Designed to help users practice and refine their trading skills without the risk of real financial loss, Stockify offers a comprehensive suite of features and tools for both novice and experienced traders.
 
 ## 🚛 Features
 
-- **Virtual Trading**: Users can create and manage their virtual portfolios, buy and sell stocks, and track their performance over time.
+- **Virtual Trading**: Seamlessly create and manage virtual portfolios, execute trades, and track performance with real-time updates.
+  
+- **Real-Time Market Data**: Stay informed with up-to-the-minute market data, including live stock prices and trends.
 
-- **Real-Time Market Data**: Stockify provides real-time market data, enabling users to make informed decisions based on the latest stock prices and trends.
+- **Risk Management Tools**: Utilize advanced risk management features such as stop-loss orders to evaluate and mitigate potential risks in your trading strategies.
 
-- **Risk Management Tools**: Stockify offers a risk management tools to help users evaluate their investment strategies, set stop-loss orders, and manage their risk exposure effectively.
+- **Educational Resources**: Access a variety of educational materials including tutorials, articles, and insights to enhance your understanding of stock trading and investment strategies.
 
-- **Top gainers & loosers**: Stockify provides top  resources such as tutorials, articles, and insights to help users enhance their understanding of stock trading and investment strategies.
-
-- **Market Status** : Stockify provides Market status of all segment at one place. 
+- **Market Status**: View the comprehensive status of various market segments in one place for better decision-making.
 
 ## ⚙ Installation
 
-Follow these steps to set up Stockify locally:
+To set up Stockify locally, follow these steps:
 
-1. Clone the repository: 
-```
-git clone https://github.com/your-username/stockify.git
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/web.git
+   ```
 
-2. Install the required dependencies:
-```
-cd stockify
+2. **Install Dependencies**:
+   Navigate to the project directories and install the necessary dependencies:
+   ```bash
+   cd stockify/frontend
+   npm install
 
-cd frontend
-  npm install
-cd backend
-  npm install
-```
+   cd ../backend
+   npm install
+   ```
 
-3. Set up the configuration file:
-- Create an .env file in the backend folder of the stockify
-- Update the necessary environment variables in the `.env` file, such as database credentials and API keys.
-```
-Frontend .env:
-REACT_APP_BASE_URL=http://localhost:5000/api
+3. **Configure Environment Variables**:
+   - Create a `.env` file in the `backend` folder.
+   - Populate it with the required environment variables:
 
-Backend .env: 
-PORT=5000
-MONGO_URI=<MONGO_URI>
-TOKEN_KEY=<JWT_TOKEN_KEY>
-FYERS_APP_ID=<FYERS_APP_ID>
-FYERS_ACCESS_TOKEN=<FYERS_ACCESS_TOKEN>
-```
+   **Frontend `.env`**:
+   ```env
+   REACT_APP_BASE_URL=http://localhost:5000/api
+   ```
 
-4. Start the application:
-```
-For frontend: npm start
-For backend: npm run dev 
-```
+   **Backend `.env`**:
+   ```env
+   PORT=5000
+   MONGO_URI=<MONGO_URI>
+   TOKEN_KEY=<JWT_TOKEN_KEY>
+   FYERS_APP_ID=<FYERS_APP_ID>
+   FYERS_ACCESS_TOKEN=<FYERS_ACCESS_TOKEN>
+   ```
 
-5. Access Stockify in your web browser at `http://localhost:3000`.
+4. **Start the Application**:
+   - For the frontend:
+     ```bash
+     cd frontend
+     npm start
+     ```
+   - For the backend:
+     ```bash
+     cd ../backend
+     npm run dev
+     ```
+
+5. **Access Stockify**:
+   Open your web browser and navigate to `http://localhost:3000` to start using Stockify.
 
 ## 🏗 Technologies Used
 
-- Front-end: HTML, CSS, JavaScript, React
-- Back-end: Node.js, Express.js
-- Database: MongoDB
-- External APIs: Fyres APIs and NSE APIs
+- **Front-end**: HTML, CSS, JavaScript, React
+- **Back-end**: Node.js, Express.js
+- **Database**: MongoDB
+- **External APIs**: Fyres APIs, NSE APIs
 
 ## 📷 Screenshots
 
-![Signup](https://github.com/Maran1947/Stockify/assets/69248165/8188c2ec-2543-41a8-be55-23c62983e39e)
-![Signin](https://github.com/Maran1947/Stockify/assets/69248165/44668b73-bd35-4b0d-b660-5a222df7dd43)
-![Account](https://github.com/Maran1947/Stockify/assets/69248165/0285b2f4-baf9-4ee0-a685-35d392f6f091)
-![dashboard_search_scrip](https://github.com/Maran1947/Stockify/assets/69248165/e6dde60f-971a-4cdc-9f3f-33e7beb262f1)
-![dashboard_order_screen](https://github.com/Maran1947/Stockify/assets/69248165/c59aa018-77a1-427e-95fe-bdcc7d6c9af5)
-![dashboard_order_placing](https://github.com/Maran1947/Stockify/assets/69248165/05f097a1-29de-4ae7-9d60-d946def8d335)
-![risk_management_tool](https://github.com/Maran1947/Stockify/assets/69248165/504fcf3e-250a-4665-8abc-60e8e2ed223b)
+Here are some screenshots of Stockify in action:
+
+- **Signup**: ![Signup](https://github.com/Maran1947/Stockify/assets/69248165/8188c2ec-2543-41a8-be55-23c62983e39e)
+- **Signin**: ![Signin](https://github.com/Maran1947/Stockify/assets/69248165/44668b73-bd35-4b0d-b660-5a222df7dd43)
+- **Account**: ![Account](https://github.com/Maran1947/Stockify/assets/69248165/0285b2f4-baf9-4ee0-a685-35d392f6f091)
+- **Dashboard Search Script**: ![dashboard_search_scrip](https://github.com/Maran1947/Stockify/assets/69248165/e6dde60f-971a-4cdc-9f3f-33e7beb262f1)
+- **Dashboard Order Screen**: ![dashboard_order_screen](https://github.com/Maran1947/Stockify/assets/69248165/c59aa018-77a1-427e-95fe-bdcc7d6c9af5)
+- **Dashboard Order Placing**: ![dashboard_order_placing](https://github.com/Maran1947/Stockify/assets/69248165/05f097a1-29de-4ae7-9d60-d946def8d335)
+- **Risk Management Tool**: ![risk_management_tool](https://github.com/Maran1947/Stockify/assets/69248165/504fcf3e-250a-4665-8abc-60e8e2ed223b)
 
 ## 🤝 Contribution
-Contributions are welcome,
-See [CONTRIBUTING.md](https://github.com/Maran1947/stockify/blob/master/CONTRIBUTING.md)
 
-# 🛡️ License
-This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
+We welcome contributions from the community! If you have suggestions, improvements, or bug fixes, feel free to submit a pull request or open an issue.
 
-_Don't forget to show your ❤ love if you feel __fabulous__, just hit the ⭐ star button at the top-right of the page_
-
-## ☕️ Buy Me a Coffee
-
-If you find this project helpful, interesting, or just want to show your appreciation, consider buying me a coffee! Your support goes a long way in keeping me fueled up and motivated to maintain and improve this project. 🚀
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/abhishekmaran" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200">
-  </a>
-</p>
-
-By buying me a coffee, you're not only supporting this project but also ensuring a steady flow of creativity, late-night coding sessions, and continuous development efforts. ☕️💻
-
-If a one-time coffee isn't enough to express your gratitude, you can even consider becoming a recurring sponsor and join my exclusive circle of supporters. Your ongoing support will provide additional resources and help in delivering new features, fixing bugs, and enhancing the overall user experience. 🌟
-
-Thank you for considering supporting this project. Your generosity is greatly appreciated! Cheers! ☕️🎉
-
-
-
+- **How to Contribute**:
+  - Fork the repository
+  - Create a new branch
+  - Make your changes
+  - Submit a pull request with a clear description of your changes
+    
+Feel free to paste this text directly into your README file!
